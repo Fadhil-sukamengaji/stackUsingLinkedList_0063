@@ -106,7 +106,9 @@ int main()
         case 3:
             stack.peek();
             break;
-        
+        case 4:
+            cout << "exiting program." << endl;
+            break;
         
         default:
             break;
