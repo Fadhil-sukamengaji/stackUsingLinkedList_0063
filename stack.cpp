@@ -20,7 +20,7 @@ class Node
 class Stack
 {
     private:
-        node *top; //pointer to the top node of the stack
+        Node *top; //pointer to the top node of the stack
 
     public:
         Stack()
@@ -38,4 +38,18 @@ class Stack
             cout << "push value: " << value << endl;
             return value;
         }
-}
+
+    void pop()
+    {
+        Node *temp = top;
+        if (isEmpty())
+        {
+            cout << "stack is empty." << endl;
+            return;
+        }
+
+        cout << "popped value: " << temp->data << endl;
+        top = temp->next;
+        delete temp;
+    }
+};
