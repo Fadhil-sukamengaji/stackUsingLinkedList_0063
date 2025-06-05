@@ -52,4 +52,24 @@ class Stack
         top = temp->next;
         delete temp;
     }
+
+    void peek()
+    {
+        if (isEmpty())
+        {
+            cout << "list is empty." << endl;
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }
+    }
+
+    
 };
