@@ -21,4 +21,16 @@ class Stack
 {
     private:
         node *top; //pointer to the top node of the stack
+
+    public:
+        Stack()
+        {
+            top = NULL; //initialize the stacl with a null top
+        }
+
+        //push operation: insert an element onto the topof the
+        int push(int value)
+        {
+            
+        }
 }
