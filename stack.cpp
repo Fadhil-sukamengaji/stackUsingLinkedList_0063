@@ -87,34 +87,4 @@ int main()
     while (choice != 5)
     {
         cout << "1. push\n";
-        cout << "2. pop\n";
-        cout << "3. peek\n";
-        cout << "4. exit\n";
-        cout << "enter your choice: ";
-        cin >> choice;
-
-        switch (choice)
-        {
-        case 1:
-            cout << "enter the value to push: ";
-            cin >> value;
-            stack.push(value);
-            break;
-        case 2:
-            stack.pop();
-            break;
-        case 3:
-            stack.peek();
-            break;
-        case 4:
-            cout << "exiting program." << endl;
-            break;
-        
-        default:
-            cout << "invalid choice. try again." << endl;
-            break;
-        }
-        cout << endl;
-    }
-    return 0;
-}
+    
