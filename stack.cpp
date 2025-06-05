@@ -15,3 +15,10 @@ class Node
         next = NULL;
     }  
 };
+
+//stack class 
+class Stack
+{
+    private:
+        node *top; //pointer to the top node of the stack
+}
